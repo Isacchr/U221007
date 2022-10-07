@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const server = express();
 
+
 server.use(express.static('public'));
 
 server.get('/', (req, res) => {
@@ -16,14 +17,16 @@ server.get('/', (req, res) => {
 
 });
 
-/*server.get('/cars', (req, res) => {
+server.get('/contacts', (req, res) => {
 
-    var Cars = [{'Brand': 'Volco', 'Modell': 'V70'}, {'Brand': 'Audi', 'Modell': 'Q3'}];
+    fs.readFile('data.json', (err, data) => {
+
     res.writeHead(200, {'Content-Type': 'text/json'});
-    res.write(JSON.stringify(Cars));
+    res.write(data);
+    return res.end();
 
-    res.end();
+    })  
 
-})*/
+})
 
 server.listen(8080);

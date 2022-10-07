@@ -1,0 +1,12 @@
+{
+    "contacts" : [
+        {
+            "name" : "Axel",
+            "number": "072-322 00 91"                
+        },
+        {
+            "name" : "Casper",
+            "number" : "073-999 44 18"
+        }
+    ]
+}
