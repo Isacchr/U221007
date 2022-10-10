@@ -1,10 +1,46 @@
 [
     {
-        "name" : "Axel",
-        "number": "072-322 00 91"                
+        "name": "Axel",
+        "number": "072-322 00 91"
     },
     {
-        "name" : "Casper",
-        "number" : "073-999 44 18"
+        "name": "Casper",
+        "number": "073-999 44 18"
+    },
+    {
+        "name": "Isac Kristiansson",
+        "number": "62346324"
+    },
+    {
+        "name": "TE4-22/23",
+        "number": "112"
+    },
+    {
+        "name": "Isac Kristiansson",
+        "number": "112"
+    },
+    {
+        "name": "Isac Kristiansson",
+        "number": "112"
+    },
+    {
+        "name": "Isac Kristiansson",
+        "number": "112000"
+    },
+    {
+        "name": "Test-github",
+        "number": "76576"
+    },
+    {
+        "name": "willy",
+        "number": "69"
+    },
+    {
+        "name": "Isac Kristiansson",
+        "number": "888"
+    },
+    {
+        "name": "eskil",
+        "number": "111"
     }
 ]

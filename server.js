@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const server = express();
 const bodyParser = require('body-parser');
+const path = require('path');
 
 var contacts;
 
@@ -38,19 +39,17 @@ server.post('/', (req, res) => {
 
     var newJsonContent = JSON.stringify(contacts);
 
-    fs.writeFile("data.json", newJsonContent, 'utf8', function (err) {})
+    fs.writeFile("data.json", newJsonContent, 'utf8', function (err) {
+
+        res.end();
+
+    })
 
 });
 
 server.get('/contacts', (req, res) => {
 
-    fs.readFile('data.json', (err, data) => {
-
-    res.writeHead(200, {'Content-Type': 'text/json'});
-    res.write(JSON.stringify(contacts));
-    return res.end();
-
-    })  
+    res.send(JSON.stringify(contacts));
 
 });
 
