@@ -1,3 +1,5 @@
+var contactsArray;
+
 
 showContacts = () => {
 
@@ -12,7 +14,7 @@ showContacts = () => {
 
         contactsArray = JSON.parse(XHR.responseText);
 
-        contactsArray.contacts.forEach(contact => {
+        contactsArray.forEach(contact => {
 
             var listElements = document.createElement('li');
 
@@ -22,9 +24,30 @@ showContacts = () => {
 
         }); 
 
-
     }
 
     XHR.open('GET', '/contacts');
     XHR.send();
+
+}
+
+saveContacts = () => {
+
+    const XHR = new XMLHttpRequest();
+
+
+    XHR.onload = () => {
+
+
+
+        //contactsArray.push(newContact);
+
+        console.log(newContact);
+
+    }
+
+
+    XHR.open('POST', '/');
+    XHR-send();
+
 }
