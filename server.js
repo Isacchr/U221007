@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const server = express();
 const bodyParser = require('body-parser');
-const path = require('path');
+
 
 var contacts;
 
@@ -33,8 +33,6 @@ server.get('/', (req, res) => {
 server.post('/', (req, res) => {
 
     contacts.push(req.body);
-    
-    console.log(contacts);
 
 
     var newJsonContent = JSON.stringify(contacts);
